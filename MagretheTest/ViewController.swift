@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var GameNameLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func GameNameTF(NameTextField: UITextField) {
+        GameNameLabel.text = "Name of the game:"+NameTextField.text!
+        
+    }
 
 }
 
